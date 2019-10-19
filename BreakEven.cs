@@ -58,5 +58,28 @@ namespace Breakeven
                 laborPercentage = value;
             }
         }
+
+        public double ContributionMargin
+        {
+            get // accessor method
+            {
+                return contributionMargin;
+            }
+        }
+        public double BreakevenUnits
+        {
+            get // accessor method
+            {
+                return breakevenUnits;
+            }
+        }
+        public double BreakevenDollars
+        {
+            get // accessor method
+            {
+                return breakevenDollars;
+            }
+        }
+
     }
 }
