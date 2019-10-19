@@ -10,8 +10,10 @@ namespace Breakeven
         double sellingPrice;
         double fixedOverhead;
         double fixedAdminSalaries;
+        double totalFixedCosts;
         double materialsPercentage;
         double laborPercentage;
+        double totalVariableCostPercentage;
         double contributionMargin;
         double breakevenUnits;
         double breakevenDollars;
@@ -71,6 +73,20 @@ namespace Breakeven
             get // accessor method
             {
                 return contributionMargin;
+            }
+        }
+        public double TotalFixedCosts
+        {
+            get // accessor method
+            {
+                return totalFixedCosts;
+            }
+        }
+        public double TotalVariableCostPercentage
+        {
+            get // accessor method
+            {
+                return totalVariableCostPercentage;
             }
         }
         public double BreakevenUnits
