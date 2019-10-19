@@ -9,7 +9,7 @@ namespace Breakeven
         string companyName;
         double sellingPrice;
         double fixedOverhead;
-        double adminSalaries;
+        double fixedAdminSalaries;
         double materialsPercentage;
         double laborPercentage;
         double contributionMargin;
@@ -37,11 +37,18 @@ namespace Breakeven
                 sellingPrice = value;
             }
         }
-        public double AdminSalaries
+        public double FixedOverhead
         {
             set // mutator method
             {
-                adminSalaries = value;
+                fixedOverhead = value;
+            }
+        }
+        public double FixedAdminSalaries
+        {
+            set // mutator method
+            {
+                fixedAdminSalaries = value;
             }
         }
         public double MaterialsPercentage
