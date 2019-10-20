@@ -14,6 +14,8 @@ namespace Breakeven
     {
         static void Main(string[] args)
         {
+            string inputValue;
+
             // instantiate object by calling BreakEven constructor method
             BreakEven calculation = new BreakEven();
 
