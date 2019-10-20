@@ -14,33 +14,27 @@ namespace Breakeven
     {
         static void Main(string[] args)
         {
-            string inputValue;
-            string name;
-            double price;
-            double overhead;
-            double salaries;
-            double materials;
-            double labor;
-            Write("Enter company name: ");
-            name = ReadLine();
-            Write("Enter selling price: ");
-            inputValue = ReadLine();
-            price = double.Parse(inputValue);
-            Write("Enter fixed overhead: ");
-            inputValue = ReadLine();
-            overhead = double.Parse(inputValue);
-            Write("Enter fixed administrative salaries: ");
-            inputValue = ReadLine();
-            salaries = double.Parse(inputValue);
-            Write("Enter raw materials percent of selling price: ");
-            inputValue = ReadLine();
-            materials = double.Parse(inputValue);
-            Write("Enter labor cost percent of selling price: ");
-            inputValue = ReadLine();
-            labor = double.Parse(inputValue);
-
             // instantiate object by calling BreakEven constructor method
             BreakEven calculation = new BreakEven();
+
+            // Get some values from the user interactively
+            Write("Enter company name: ");
+            calculation.CompanyName = ReadLine();
+            Write("Enter selling price: ");
+            inputValue = ReadLine();
+            calculation.SellingPrice = double.Parse(inputValue);
+            Write("Enter fixed overhead: ");
+            inputValue = ReadLine();
+            calculation.FixedOverhead = double.Parse(inputValue);
+            Write("Enter fixed administrative salaries: ");
+            inputValue = ReadLine();
+            calculation.FixedAdminSalaries = double.Parse(inputValue);
+            Write("Enter raw materials percent of selling price: ");
+            inputValue = ReadLine();
+            calculation.MaterialsPercentage = double.Parse(inputValue);
+            Write("Enter labor cost percent of selling price: ");
+            inputValue = ReadLine();
+            calculation.LaborPercentage = double.Parse(inputValue);
 
         }
     }
