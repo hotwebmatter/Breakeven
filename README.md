@@ -1,6 +1,8 @@
 # Colonial Bank Breakeven
 Seventh C# assignment submitted via Blackboard.
 
+Actually assigned by professor, not just based on exercise in textbook.
+
 Again, this is a no-frills implementation of the bare specification.
 
 ## Example output
