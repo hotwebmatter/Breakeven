@@ -117,10 +117,10 @@ namespace Breakeven
             CalculateBreakEven();
             string result;
             result = string.Format("\t{0}\n", companyName);
-            result += string.Format("Total fixed costs\t{0:c}", totalFixedCosts);
-            result += string.Format("Total variable percent\t{0:p}", totalVariableCostPercentage);
-            result += string.Format("Break even units are\t{0}", breakevenUnits);
-            result += string.Format("Break even sales are\t{0:c}", breakevenDollars);
+            result += string.Format("Total fixed costs\t{0:C}\n", totalFixedCosts);
+            result += string.Format("Total variable percent\t{0:p}\n", totalVariableCostPercentage);
+            result += string.Format("Break even units are\t{0}\n", breakevenUnits);
+            result += string.Format("Break even sales are\t{0:C}\n", breakevenDollars);
             return result;
         }
     }
