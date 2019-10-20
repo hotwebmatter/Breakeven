@@ -105,11 +105,11 @@ namespace Breakeven
         }
         private void CalculateBreakEven()
         {
-            totalVariableCostPercentage = materialsPercentage + laborPercentage;
+            totalVariableCostPercentage = (materialsPercentage + laborPercentage) / 100;
             contributionMargin = sellingPrice * totalVariableCostPercentage;
             totalFixedCosts = fixedOverhead + fixedAdminSalaries;
-            breakevenUnits = totalFixedCosts / contributionMargin;
-            breakevenDollars = sellingPrice * breakevenUnits;
+            breakevenUnits = Math.Ceiling(totalFixedCosts / contributionMargin);
+            breakevenDollars = Math.Ceiling(sellingPrice * breakevenUnits);
         }
 
         public override string ToString()
