@@ -7,6 +7,7 @@
  * ######################################################
  */
 using System;
+using static System.Console;
 
 namespace Breakeven
 {
@@ -38,6 +39,9 @@ namespace Breakeven
             inputValue = ReadLine();
             calculation.LaborPercentage = double.Parse(inputValue);
 
+            // generate output
+            WriteLine("***********************************");
+            WriteLine(calculation.ToString());
         }
     }
 }
