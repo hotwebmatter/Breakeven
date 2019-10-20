@@ -42,6 +42,7 @@ namespace Breakeven
             // generate output
             WriteLine("***********************************");
             WriteLine(calculation.ToString());
+            ReadLine();
         }
     }
 }

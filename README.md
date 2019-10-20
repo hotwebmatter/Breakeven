@@ -18,8 +18,4 @@ Total variable percent  70.00%
 Break even units are    17143
 Break even sales are    $257,145.00
 
-
-C:\Program Files\dotnet\dotnet.exe (process 3204) exited with code 0.
-To automatically close the console when debugging stops, enable Tools->Options->Debugging->Automatically close the console when debugging stops.
-Press any key to close this window . . .
 ```
